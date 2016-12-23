@@ -1,0 +1,22 @@
+{
+  "name": "now",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Metál Ádám <devmetal91@gmail.com>",
+    "Bence Mándli <mandli.bence@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^3.3.7"
+  }
+}
