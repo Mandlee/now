@@ -1,6 +1,11 @@
+html{
+  min-height: 100%;
+}
+
 body {
   padding-top: 50px;
   min-height: 100%;
   background: url('../img/bg.png') no-repeat center center fixed;
   @include css3-prefix("background-size", "cover");
+  font-family: $montserrat;
 }

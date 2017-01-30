@@ -8,7 +8,7 @@
 const hello = () => {
   return {
     restrict: 'AEC',
-    templateUrl: 'main/hello.html',
+    templateUrl: 'main/views/hello.html',
     scope: {
       hello: '@'
     }

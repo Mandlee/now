@@ -25,6 +25,7 @@
     "watchify": "^3.8.0"
   },
   "dependencies": {
+    "angular-ui-router": "^0.3.2",
     "gulp": "^3.9.1"
   }
 }
