@@ -8,17 +8,26 @@ angular.module('main.routes', ['ui.router']).config(['$stateProvider', '$urlRout
     console.log('routes');
 
     $stateProvider
+        .state('login', {
+            url: '/login',
+            templateUrl: 'main/views/pages/login.html'
+        })
         .state('main', {
             url: '/main',
-            templateUrl: 'main/views/login.html'
+            abstract: true,
+            templateUrl: 'main/views/main.html'
+        })
+        .state('main.home', {
+            url: '/home',
+            templateUrl: 'main/views/pages/home.html'
+        })
+        .state('main.article', {
+            url: '/news/{id}',
+            templateUrl: 'main/views/pages/article.html'
+        })
+        .state('main.contact', {
+            url: '/contact',
+            templateUrl: 'main/views/pages/contact.html'
         });
-    /*.state('main.home', {
-     url: '/home',
-     templateUrl: 'view/pages/home.html'
-     })
-     .state('main.about', {
-     url: '/about',
-     templateUrl: 'view/pages/about.html'
-     });*/
-    $urlRouterProvider.otherwise('/main');
+    $urlRouterProvider.otherwise('/login');
 }]);

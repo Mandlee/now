@@ -1,0 +1,12 @@
+<div class="input-group input-field" ng-class="{'active': focus}">
+    <div class="input-group-addon">
+        <img src="img/logo.svg" alt="{{imgAlt}}">
+    </div>
+    <input class="form-control"
+           type="{{type}}"
+           placeholder="{{placeholder}}"
+           ng-model="search"
+           ng-focus="focus=true"
+           ng-blur="focus=false">
+</div>
+

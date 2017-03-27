@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="App">
+<html lang="en" ng-app="App" ng-data-controller="MainController as mainCtrl">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
 
     <title>Bence build skeleton</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body ng-controller="MainController as mainCtrl">
@@ -14,6 +15,7 @@
       <div ng-include="'main/login.html'"></div>
     </div>-->
     <div class="ui-view-container" ui-view ng-cloak></div>
+    <hamburger-menu></hamburger-menu>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/js/bundle.js"></script>

@@ -16,7 +16,9 @@ const main = angular.module('main', []);
 main.controller('MainController', require('./controllers/MainController'));
 
 // Direktíva deklaráció a modulban
-main.directive('hello', require('./directives/hello'));
+main.directive('hello', require('./directives/hello'))
+    .directive('inputField', require('./directives/inputField'))
+    .directive('hamburgerMenu', require('./directives/hamburgerMenu'));
 
 // A nodejs modul kimenete, vagy más nével publikus felülete
 // megegyezik az angularok modul nevével. Itt hozzuk össze a két paradigmát

@@ -1,5 +1,18 @@
 .btn {
   background-color: $main-orange;
   border: none;
-  border-radius: 25px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px;
+  @include css3-prefix('border-radius', $border-radius);
+
+  &:hover, &:active, &:focus, &:active:hover {
+    background-color: transparentHexa($main-orange, 0.8);
+  }
+
+  &:active, &:active:hover {
+    box-shadow: none;
+    outline: none;
+  }
+
 }

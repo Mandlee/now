@@ -4,6 +4,7 @@ class MainIndexController {
 
     constructor($state) {
         this.$state = $state;
+        this.hamburgerMenuActive = false;
 
         console.log('MainCtrl   ');
     }
@@ -14,6 +15,14 @@ class MainIndexController {
         }
         return clazz || 'active';
     };
+
+    toggleActiveHamburgerMenu() {
+        this.hamburgerMenuActive = !this.hamburgerMenuActive;
+    }
+
+    isActiveHamburgerMenu() {
+        return this.hamburgerMenuActive;
+    }
 
 }
 

@@ -1,11 +1,102 @@
-html{
+html {
   min-height: 100%;
 }
 
 body {
-  padding-top: 50px;
   min-height: 100%;
-  background: url('../img/bg.png') no-repeat center center fixed;
-  @include css3-prefix("background-size", "cover");
+  padding-top: $header-height;
   font-family: $montserrat;
+}
+
+.row {
+  margin: 0;
+}
+
+.page {
+}
+
+.article {
+  height: calc(50vh - 30.25px);
+  padding: 0;
+
+  &:hover {
+    h1 {
+      color: $main-orange;
+    }
+    cursor: pointer;
+  }
+
+  article {
+
+    span {
+      margin: 0 10px 0 0;
+    }
+    .channel {
+      border-bottom: 1px solid white;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      float: right;
+    }
+  }
+
+  &-one {
+    background: #fff url('../img/bg.png') no-repeat center center;
+    background-size: cover;
+    display: table;
+
+    article {
+      vertical-align: bottom;
+      display: table-cell;
+    }
+  }
+
+  .city {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/city.jpg');
+    background-color: #fff;
+    background-size: cover;
+  }
+
+  .right-arrow {
+    position: relative;
+    z-index: 1;
+    &:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(255, 255, 255, 0);
+      border-left-color: #ffffff;
+      border-width: 10px;
+      margin-top: -10px;
+    }
+  }
+
+  .left-arrow {
+    position: relative;
+    z-index: 1;
+    &:after {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(255, 255, 255, 0);
+      border-right-color: #ffffff;
+      border-width: 10px;
+      margin-top: -10px;
+    }
+  }
+}
+
+.align-right {
+  text-align: right;
 }

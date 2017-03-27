@@ -1,0 +1,29 @@
+.login {
+  background: url('../img/bg.png') no-repeat center center fixed, linear-gradient(to bottom, $main-orange, black);
+  @include css3-prefix("background-size", "cover");
+  margin-top: -$header-height;
+  min-height: 100vh;
+
+  .container {
+    max-width: 400px;
+  }
+  .logo-contanier {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .input-field {
+    margin: 20px 0;
+  }
+
+  .controls {
+    color: $main-light-grey;
+    padding-top: 15px;
+    font-size: 12px;
+
+    div {
+      padding: 0;
+    }
+  }
+
+}
