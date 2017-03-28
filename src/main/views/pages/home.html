@@ -1,4 +1,12 @@
 <div class="page">
+    <div ng-repeat="article in mainCtrl.articleFeed  track by $index" ng-class="{'row': $odd}">
+        <article-feed data="article" data-index="$index" data-landscape="$even && $last"></article-feed>
+    </div>
+
+</div>
+
+<!--
+<div class="page">
     <div class="row">
         <div class="col-xs-12 col-sm-6 article article-one" ui-sref="main.article({id:1})">
             <article>
@@ -54,4 +62,4 @@
         </div>
     </div>
 
-</div>
+</div>-->

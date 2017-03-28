@@ -1,0 +1,77 @@
+.article-feed {
+  height: calc(50vh - 30.25px);
+  padding: 0;
+  display: table;
+  background-size: 50vw 50vh, cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat:   no-repeat;
+  @include css3-prefix("transition", "all 1s ease-in");
+
+  //color: white;
+
+  &-dark {
+    color: black !important;
+  }
+
+  &:hover {
+    h1 {
+      color: $main-orange;
+    }
+    /*background-position-x: left;
+    background-position-y: bottom;*/
+    background-size: 60vw 60vh, cover;
+    cursor: pointer;
+  }
+
+  &.right-arrow, &.left-arrow {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.right-arrow:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #ffffff;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+
+  &.left-arrow:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+
+  article {
+    vertical-align: bottom;
+    display: table-cell;
+
+    span {
+      margin: 0 10px 0 0;
+    }
+
+    .channel {
+      border-bottom: 1px solid white;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      float: right;
+    }
+  }
+}

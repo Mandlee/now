@@ -6,7 +6,30 @@ class MainIndexController {
         this.$state = $state;
         this.hamburgerMenuActive = false;
 
-        console.log('MainCtrl   ');
+        this.articleFeed = [
+            {
+                title: "Lorem ipsum",
+                img: "../img/sun.jpg"
+            },
+            {
+                title: "Lorem ipsum 2",
+                img: "../img/city.jpg"
+            },
+            {
+                title: "Lorem ipsum 3",
+                img: "../img/phone.png"
+            },
+            {
+                title: "Lorem ipsum 4",
+                img: "../img/fox.jpg"
+            },
+            {
+                title: "Lorem ipsum",
+                img: "../img/bg.png"
+            }
+
+        ];
+        console.log('MainCtrl');
     }
 
     isActivePage(route, clazz) {
@@ -23,6 +46,7 @@ class MainIndexController {
     isActiveHamburgerMenu() {
         return this.hamburgerMenuActive;
     }
+
 
 }
 

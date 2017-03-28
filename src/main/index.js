@@ -18,6 +18,7 @@ main.controller('MainController', require('./controllers/MainController'));
 // Direktíva deklaráció a modulban
 main.directive('hello', require('./directives/hello'))
     .directive('inputField', require('./directives/inputField'))
+    .directive('articleFeed', require('./directives/articleFeed'))
     .directive('hamburgerMenu', require('./directives/hamburgerMenu'));
 
 // A nodejs modul kimenete, vagy más nével publikus felülete
