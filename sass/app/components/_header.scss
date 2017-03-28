@@ -3,6 +3,7 @@
   margin: 0;
   border: 0;
   height: $header-height;
+  @include css3-prefix("transition", "box-shadow 0.25s ease-in");
   //line-height: $header-height;
   .navbar-brand {
     margin-left: 70px;

@@ -9,23 +9,38 @@ class MainIndexController {
         this.articleFeed = [
             {
                 title: "Lorem ipsum",
-                img: "../img/sun.jpg"
+                img: "../img/sun.jpg",
+                date: "20m ago",
+                channel: "science",
+                source: "SPACE.com"
             },
             {
                 title: "Lorem ipsum 2",
-                img: "../img/city.jpg"
+                img: "../img/city.jpg",
+                date: "20m ago",
+                channel: "science",
+                source: "SPACE.com"
             },
             {
                 title: "Lorem ipsum 3",
-                img: "../img/phone.png"
+                img: "../img/phone.png",
+                date: "20m ago",
+                channel: "science",
+                source: "SPACE.com"
             },
             {
                 title: "Lorem ipsum 4",
-                img: "../img/fox.jpg"
+                img: "../img/fox.jpg",
+                date: "20m ago",
+                channel: "science",
+                source: "SPACE.com"
             },
             {
                 title: "Lorem ipsum",
-                img: "../img/bg.png"
+                img: "../img/bg.png",
+                date: "20m ago",
+                channel: "science",
+                source: "SPACE.com"
             }
 
         ];

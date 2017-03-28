@@ -2,25 +2,30 @@
   height: calc(50vh - 30.25px);
   padding: 0;
   display: table;
-  background-size: 50vw 50vh, cover;
+  //background-size: 50vw 50vh, cover;
+  background-size: cover;
   background-position-x: center;
   background-position-y: center;
-  background-repeat:   no-repeat;
-  @include css3-prefix("transition", "all 1s ease-in");
+  background-repeat: no-repeat;
 
-  //color: white;
+  color: $main-dark;
 
   &-dark {
-    color: black !important;
+    h1 {
+      color: $main-dark;
+    }
+  }
+
+  &-light {
+    color: white;
   }
 
   &:hover {
     h1 {
-      color: $main-orange;
+      //color: $main-orange;
     }
-    /*background-position-x: left;
-    background-position-y: bottom;*/
-    background-size: 60vw 60vh, cover;
+    //@include css3-prefix("transition", "background-size 1s ease-in");
+    //background-size: 60vw 60vh, cover;
     cursor: pointer;
   }
 
