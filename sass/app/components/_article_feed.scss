@@ -68,15 +68,23 @@
     vertical-align: bottom;
     display: table-cell;
 
-    span {
-      margin: 0 10px 0 0;
-    }
+    padding: 0 15px 15px 15px;
 
-    .channel {
-      border-bottom: 1px solid white;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      float: right;
+    h1{
+      padding: 25px 0;
     }
+  }
+}
+
+.article-control {
+  span {
+    margin: 0 10px 0 0;
+  }
+
+  .channel {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    float: right;
   }
 }

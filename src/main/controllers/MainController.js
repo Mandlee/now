@@ -8,21 +8,21 @@ class MainIndexController {
 
         this.articleFeed = [
             {
-                title: "Lorem ipsum",
+                title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                 img: "../img/sun.jpg",
                 date: "20m ago",
                 channel: "science",
                 source: "SPACE.com"
             },
             {
-                title: "Lorem ipsum 2",
+                title: "Lorem ipsum dolor sit amet, consectetur 2",
                 img: "../img/city.jpg",
                 date: "20m ago",
                 channel: "science",
                 source: "SPACE.com"
             },
             {
-                title: "Lorem ipsum 3",
+                title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit 3",
                 img: "../img/phone.png",
                 date: "20m ago",
                 channel: "science",
