@@ -70,7 +70,7 @@
 
     padding: 0 15px 15px 15px;
 
-    h1{
+    h1 {
       padding: 25px 0;
     }
   }
@@ -79,12 +79,19 @@
 .article-control {
   span {
     margin: 0 10px 0 0;
+    font-size: 12px;
   }
 
   .channel {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid $main-light-grey;
     margin-bottom: 10px;
     text-transform: uppercase;
     float: right;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
   }
 }

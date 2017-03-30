@@ -1,0 +1,32 @@
+.article-detail {
+  .title-cover {
+    height: calc(40vh);
+    background-image: url("../img/fox.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+
+    h1 {
+      display: inline-block;
+    }
+
+    color: white;
+  }
+
+  color: $main-dark;
+
+  .article-control {
+    padding: 30px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+
+  p {
+    line-height: 30px;
+    margin: 10px 0;
+  }
+}
