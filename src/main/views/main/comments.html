@@ -1,0 +1,40 @@
+<div class="comment-list">
+    <div class="comment-header">
+        <div class="container">
+            <h1>23 comments</h1>
+
+            <div class="comment-type-control">
+                <button class="btn btn-lg btn-primary active">Best</button>
+                <button class="btn btn-lg btn-primary">Newest</button>
+                <button class="btn btn-lg btn-primary">Oldest</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div ng-repeat="comment in comments" class="comment">
+            <div class="img-container">
+                <img ng-src="{{comment.img}}">
+            </div>
+            <div class="comment-body">
+                <span class="comment-name">{{comment.name}}</span>
+                <p>{{comment.text}}</p>
+            </div>
+            <div class="comment-detail">
+                <span><img src="img/clock.svg">{{comment.date}}</span>
+                <span><img src="img/like.svg">{{comment.like}}</span>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="img-container">
+                <img src="../img/user.svg">
+            </div>
+            <div class="comment-body">
+                <input-field data-type="text" data-placeholder="Write something" data-autofocus="true"></input-field>
+            </div>
+            <div class="comment-detail">
+                <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>

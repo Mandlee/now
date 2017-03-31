@@ -12,8 +12,10 @@
 
 // Components
 @import "app/components/header";
+@import "app/components/footer";
 @import "app/components/hamburger_menu";
 @import "app/components/article_feed";
+@import "app/components/comments";
 
 // Pages
 @import "app/pages/login";

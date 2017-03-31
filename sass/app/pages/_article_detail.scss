@@ -7,8 +7,12 @@
     background-position-y: center;
     background-repeat: no-repeat;
 
+    display: flex;
+    align-items: flex-end;
+
     h1 {
       display: inline-block;
+      margin-bottom: 50px;
     }
 
     color: white;

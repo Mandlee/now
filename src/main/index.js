@@ -21,7 +21,9 @@ main.directive('hello', require('./directives/hello'))
     .directive('articleFeed', require('./directives/articleFeed'))
     .directive('hamburgerMenu', require('./directives/hamburgerMenu'))
     .directive('scrollShadow', require('./directives/scrollShadow'))
-    .directive('articleControls', require('./directives/articleControls'));
+    .directive('articleControls', require('./directives/articleControls'))
+    .directive('comments', require('./directives/comments'))
+    .directive('mainFooter', require('./directives/mainFooter'));
 
 // A nodejs modul kimenete, vagy más nével publikus felülete
 // megegyezik az angularok modul nevével. Itt hozzuk össze a két paradigmát

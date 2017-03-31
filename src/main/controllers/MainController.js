@@ -42,9 +42,32 @@ class MainIndexController {
                 channel: "science",
                 source: "SPACE.com"
             }
-
         ];
-        console.log('MainCtrl');
+
+        this.articleComment = [
+            {
+                name: "Mike Taylor",
+                text: "Such a massive change in such a short time is extremely unusual.",
+                date: "Apr 3, 1:22pm",
+                like: 12,
+                img: "../img/user.svg"
+            },
+            {
+                name: "Sophia Anderson",
+                text: "Loss of Article sea ice is just one of the many changes that are accelerating it.",
+                date: "Apr 3, 5:04pm",
+                like: 8,
+                img: "../img/user.svg"
+            },
+            {
+                name: "Charlie Harris",
+                text: "Perhaps they had the same thing in the early 20th century.",
+                date: "Apr 3, 10:34am",
+                like: 5,
+                img: "../img/user.svg"
+            }
+        ];
+        console.log('MainCtrl', this.articleComment);
     }
 
     isActivePage(route, clazz) {
