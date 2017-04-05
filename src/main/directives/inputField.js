@@ -8,8 +8,9 @@ module.exports = function () {
             type: "@",
             placeholder: '@?',
             autofocus: '=?',
-            imgSrc: '=',
-            imgAlt: '@?'
+            imgSrc: '@',
+            imgAlt: '@?',
+            lightStyle: '=?'
         },
         templateUrl: 'main/views/main/input_field.html',
         link: function ($scope, element) {

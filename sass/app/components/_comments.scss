@@ -19,7 +19,6 @@
     display: inline-block;
     .btn {
       display: inline-block;
-      background: black;
       width: 100px;
     }
   }
@@ -61,6 +60,21 @@
       width: 18px;
       height: 18px;
       margin: 0 10px;
+    }
+  }
+
+  &.write-comment {
+    border: 0;
+
+    .comment-body {
+      margin-right: 20px;
+    }
+
+    .btn {
+      width: 100%;
+      img {
+        margin: 0 10px 0 0;
+      }
     }
   }
 }

@@ -67,7 +67,6 @@ class MainIndexController {
                 img: "../img/user.svg"
             }
         ];
-        console.log('MainCtrl', this.articleComment);
     }
 
     isActivePage(route, clazz) {

@@ -5,8 +5,6 @@ require('angular-ui-router');
 const angular = require('angular');
 
 angular.module('main.routes', ['ui.router']).config(['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterProvider) => {
-    console.log('routes');
-
     $stateProvider
         .state('login', {
             url: '/login',

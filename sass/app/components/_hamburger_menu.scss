@@ -11,7 +11,6 @@
   margin-top: 8px;
 }
 
-
 .hamburgermenu .content .disabled {
   cursor: not-allowed;
   opacity: 0.3;
@@ -113,18 +112,18 @@
   ul {
     margin: 0;
     padding: 0;
-    &.no-margin {
-      margin: 0px;
-    }
   }
+
   li {
     list-style: none;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
     padding: 5px 10px;
+
     img {
-      height: 15px;
+      height: 20px;
+      padding-right: 15px;
     }
     &.disabled {
       cursor: not-allowed;
@@ -136,21 +135,19 @@
     font-size: 18px;
     margin: 15px 0 15px 42px;
     text-transform: uppercase;
-    img {
-      padding-right: 12px;
-    }
+
   }
   .menu-content {
     margin-left: 25px;
   }
   li a {
-    border-radius: 5px;
     padding: 8px 15px;
     color: #fff;
     display: block;
     text-decoration: none;
+
     &:hover {
-      background: #007BAD;
+      color: $main-orange;
     }
   }
 }
@@ -163,7 +160,7 @@
   li img {
     margin-right: 15px;
     position: relative;
-    top: -3px;
+    top: -1.5px;
   }
 }
 

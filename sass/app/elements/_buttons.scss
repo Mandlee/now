@@ -1,6 +1,6 @@
 .btn {
   background-color: $main-orange;
-  border: none;
+  border: 0;
   font-weight: bold;
   font-size: 12px;
   line-height: 22px;
@@ -15,4 +15,14 @@
     outline: none;
   }
 
+  &.selected {
+    border: 1px solid white;
+  }
+
+  &-light {
+    border: 1px solid transparent;
+    &:hover, &:active, &:focus, &:active:hover {
+      border: 1px solid white;
+    }
+  }
 }

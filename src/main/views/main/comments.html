@@ -4,9 +4,9 @@
             <h1>23 comments</h1>
 
             <div class="comment-type-control">
-                <button class="btn btn-lg btn-primary active">Best</button>
-                <button class="btn btn-lg btn-primary">Newest</button>
-                <button class="btn btn-lg btn-primary">Oldest</button>
+                <button class="btn btn-lg btn-primary btn-light selected">Best</button>
+                <button class="btn btn-lg btn-primary btn-light">Newest</button>
+                <button class="btn btn-lg btn-primary btn-light">Oldest</button>
             </div>
         </div>
     </div>
@@ -24,15 +24,18 @@
                 <span><img src="img/like.svg">{{comment.like}}</span>
             </div>
         </div>
-        <div class="comment">
+        <div class="comment write-comment">
             <div class="img-container">
                 <img src="../img/user.svg">
             </div>
             <div class="comment-body">
-                <input-field data-type="text" data-placeholder="Write something" data-autofocus="true"></input-field>
+                <input-field data-type="text" data-placeholder="Write something" data-light-style="true" data-img-src="attachment.svg"></input-field>
             </div>
             <div class="comment-detail">
-                <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+                <button class="btn btn-lg btn-primary toolbar-shadow" type="submit">
+                    <img src="img/right-arrow.svg">
+                    Submit
+                </button>
             </div>
         </div>
 

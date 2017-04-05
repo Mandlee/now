@@ -1,6 +1,6 @@
-<div class="input-group input-field" ng-class="{'active': focus}">
+<div class="input-group input-field" ng-class="{'active': focus, 'light': lightStyle}">
     <div class="input-group-addon">
-        <img src="img/logo.svg" alt="{{imgAlt}}">
+        <img ng-src="img/{{imgSrc}}" alt="{{imgAlt}}">
     </div>
     <input class="form-control"
            type="{{type}}"

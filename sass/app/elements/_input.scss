@@ -55,4 +55,28 @@
     }
   }
 
+
+  &.light {
+    border: 1.5px solid $main-orange;
+    .form-control {
+      color: $main-grey;
+
+      &::-webkit-input-placeholder {
+        color: $main-light-grey;
+      }
+
+      &:-moz-placeholder {
+        color: $main-light-grey;
+      }
+
+      &::-moz-placeholder {
+        color: $main-light-grey;
+      }
+
+      &:-ms-input-placeholder {
+        color: $main-light-grey;
+      }
+    }
+  }
+
 }
