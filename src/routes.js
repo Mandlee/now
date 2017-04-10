@@ -23,6 +23,10 @@ angular.module('main.routes', ['ui.router']).config(['$stateProvider', '$urlRout
             url: '/news/{id}',
             templateUrl: 'main/views/pages/article.html'
         })
+        .state('main.widgets', {
+            url: '/widgets',
+            templateUrl: 'main/views/pages/widgets.html'
+        })
         .state('main.contact', {
             url: '/contact',
             templateUrl: 'main/views/pages/contact.html'

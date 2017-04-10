@@ -1,0 +1,34 @@
+.contact {
+
+  &-form {
+    @extend .full-height;
+    background: linear-gradient(to bottom, #f39478, #26261d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-map {
+    @extend .full-height;
+  }
+
+  &-form-container {
+    width: 350px;
+    margin-bottom: 150px;
+
+    .input-field, textarea {
+      margin: 20px 0;
+      padding: 5px 0;
+    }
+
+    .btn {
+
+    }
+
+    h1,
+    p {
+      color: white;
+      text-align: center;
+    }
+  }
+}

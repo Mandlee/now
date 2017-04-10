@@ -9,6 +9,8 @@
 @import "app/elements/input";
 @import "app/elements/buttons";
 @import "app/elements/links";
+@import "app/elements/textarea";
+
 
 // Components
 @import "app/components/header";
@@ -20,3 +22,5 @@
 // Pages
 @import "app/pages/login";
 @import "app/pages/article_detail";
+@import "app/pages/contact";
+@import "app/pages/widgets";
